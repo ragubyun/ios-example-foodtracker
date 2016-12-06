@@ -23,7 +23,7 @@ class FoodTrackerTests: XCTestCase {
         XCTAssertNil(noName, "Empty name is invalid")
         
         let badRating = Meal(name: "Really bad rating", photo: nil, rating: -1)
-        XCTAssertNil(badRating, "negative ratings are invalid, be positive")
+        XCTAssertNotNil(badRating, "negative ratings are invalid, be positive")
     }
     
 }
