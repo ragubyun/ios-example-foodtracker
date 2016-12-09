@@ -27,4 +27,5 @@ class Meal {
             return nil
         }
     }
+    
 }
